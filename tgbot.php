@@ -26,11 +26,11 @@ require_once 'CommandBase.class.php';
 
 class TgBot{
 
-	public static $BotToken = ""; //replace w telegram token
-	public static $FatherId = ""; //replace w admin id, aka Father
-	public static $BotName = ""; //replace w bot name
-	public static $BotAlias = ""; //Ej: $ or % or >
-	var $Request; // Request.class.php object
+	public static $BotToken = ""; //replace w telegram token | Colocar el token del bot
+	public static $FatherId = "0"; //replace w admin id, aka Father | Colocar el id del creador del bot //Opcional 
+	public static $BotName = ""; //replace w bot name | Colocar el nombre del bot 
+	public static $BotAlias = ""; //Ej: $ or % or > | Prefijo para el comando
+	var $Request; // Request.class.php object 
 	var $Stream = ""; //Main Message Stream
 	var $JsonMessage = ""; //Message parsed in array
 	var $Url;
